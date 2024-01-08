@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #062312ef;
+        background-size: 78%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+      }
+      
+      input[type="button"] {
+        background-color: #04AA6D;
+        color: #fff;
+        cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form action="login.php" method="post">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input type="button" value="Login" placeholder="=submit" onclick="alert('form is submit')">
+    </form>
+    <p><a href="forgot-password.php">Forgot password?</a></p>
+  </div>
+</body>
+</html>
